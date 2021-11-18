@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="0" green="66" red="0" type="rgb"/>
+    </Property>
+    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+      <Color id="Default Cursor"/>
+    </Property>
+    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="userText" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="sendButton" min="-2" pref="119" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="GameTabs" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="GameTabs" pref="506" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane" min="-2" pref="134" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="userText" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="sendButton" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JTextField" name="userText">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="userTextActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="sendButton">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Send"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sendButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="chatWindow">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JTabbedPane" name="GameTabs">
+      <Properties>
+        <Property name="tabLayoutPolicy" type="int" value="1"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="fieldBG">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="66" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Field of Play">
+                <Property name="tabTitle" type="java.lang.String" value="Field of Play"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="fieldLayeredPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="deckPic" pref="38" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="deckPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="fieldLayeredPanel" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="deckPic" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
+                      <Component id="deckPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="119" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="deckPanel">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="192" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="272" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+            <Container class="javax.swing.JLayeredPane" name="fieldLayeredPanel">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
+                          <Component id="card2Panel" min="-2" pref="166" max="-2" attributes="0"/>
+                          <EmptySpace pref="244" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                              <Component id="card3Panel" min="-2" pref="166" max="-2" attributes="0"/>
+                              <EmptySpace pref="370" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="300" max="32767" attributes="0"/>
+                              <Component id="card1Panel" min="-2" pref="170" max="-2" attributes="0"/>
+                              <EmptySpace pref="120" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                          <Component id="card2Panel" min="-2" pref="266" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                              <Component id="card3Panel" min="-2" pref="254" max="-2" attributes="0"/>
+                              <EmptySpace pref="194" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="147" max="32767" attributes="0"/>
+                              <Component id="card1Panel" min="-2" pref="267" max="-2" attributes="0"/>
+                              <EmptySpace pref="64" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="card1Panel">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder roundedCorners="true" thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="1_card1Panel">
+                        <CodeVariable name="card1Panel" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="card1Panel"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="2">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="1_card1Panel"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="card2Panel">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder roundedCorners="true" thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="3_card2Panel">
+                        <CodeVariable name="card2Panel" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="card2Panel"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="4">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="3_card2Panel"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="card3Panel">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder roundedCorners="true" thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="5_card3Panel">
+                        <CodeVariable name="card3Panel" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="card3Panel"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="6">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="5_card3Panel"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="deckPic">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="handBG">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="66" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="My Hand">
+                <Property name="tabTitle" type="java.lang.String" value="My Hand"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="handLayeredPanel" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="handLayeredPanel" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JLayeredPane" name="handLayeredPanel">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="692" max="-2" attributes="0"/>
+                                  <Component id="handCard11" min="-2" pref="130" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="284" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" min="-2" pref="335" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="81" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="752" max="32767" attributes="0"/>
+                              <Component id="handCard12" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="618" max="32767" attributes="0"/>
+                              <Component id="handCard10" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="3" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="558" max="32767" attributes="0"/>
+                              <Component id="handCard9" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="215" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="4" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="484" max="32767" attributes="0"/>
+                              <Component id="handCard8" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="289" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="5" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="424" max="32767" attributes="0"/>
+                              <Component id="handCard7" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="349" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="6" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="290" max="32767" attributes="0"/>
+                              <Component id="handCard5" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="483" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="7" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
+                              <Component id="handCard3" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace pref="617" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="8" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                              <Component id="handCard1" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace pref="751" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="9" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="350" max="-2" attributes="0"/>
+                              <Component id="handCard6" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace pref="423" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="10" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="215" max="-2" attributes="0"/>
+                              <Component id="handCard4" min="-2" pref="131" max="-2" attributes="0"/>
+                              <EmptySpace pref="557" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="11" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                              <Component id="handCard2" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace pref="692" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="12" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="handCard13" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace pref="763" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="13" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
+                              <Component id="handCard14" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace pref="629" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="14" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="629" max="-2" attributes="0"/>
+                              <Component id="handCard15" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace pref="144" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="15" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="763" max="32767" attributes="0"/>
+                              <Component id="handCard16" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+                          <Component id="handCard11" min="-2" pref="175" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jLabel1" pref="214" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="handCard12" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="283" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="handCard10" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="283" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="3" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                              <Component id="handCard9" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="225" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="4" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="handCard8" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="282" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="5" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                              <Component id="handCard7" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="225" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="6" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                              <Component id="handCard5" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="225" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="7" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                              <Component id="handCard3" min="-2" pref="174" max="-2" attributes="0"/>
+                              <EmptySpace pref="226" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="8" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                              <Component id="handCard1" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="226" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="9" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="handCard6" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="282" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="10" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="handCard4" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="282" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="11" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                              <Component id="handCard2" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="282" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="12" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="296" max="-2" attributes="0"/>
+                              <Component id="handCard13" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace pref="19" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="13" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="296" max="32767" attributes="0"/>
+                              <Component id="handCard14" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="14" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="284" max="32767" attributes="0"/>
+                              <Component id="handCard15" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="15" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="284" max="32767" attributes="0"/>
+                              <Component id="handCard16" min="-2" pref="175" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="handCard16">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="7_handCard16">
+                        <CodeVariable name="handCard16" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard16"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="8">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="7_handCard16"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard15">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="9_handCard15">
+                        <CodeVariable name="handCard15" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard15"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="10">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="9_handCard15"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard14">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="11_handCard14">
+                        <CodeVariable name="handCard14" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard14"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="12">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="11_handCard14"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard13">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="13_handCard13">
+                        <CodeVariable name="handCard13" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard13"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="14">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="13_handCard13"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard12">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="15_handCard12">
+                        <CodeVariable name="handCard12" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard12"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="16">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="15_handCard12"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard11">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="17_handCard11">
+                        <CodeVariable name="handCard11" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard11"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="18">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="17_handCard11"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard10">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="19_handCard10">
+                        <CodeVariable name="handCard10" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard10"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="20">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="19_handCard10"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard9">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="21_handCard9">
+                        <CodeVariable name="handCard9" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard9"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="22">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="21_handCard9"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard8">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="23_handCard8">
+                        <CodeVariable name="handCard8" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard8"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="24">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="23_handCard8"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard7">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="25_handCard7">
+                        <CodeVariable name="handCard7" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard7"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="26">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="25_handCard7"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard6">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="27_handCard6">
+                        <CodeVariable name="handCard6" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard6"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="28">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="27_handCard6"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard5">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="29_handCard5">
+                        <CodeVariable name="handCard5" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard5"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="30">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="29_handCard5"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard4">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="31_handCard4">
+                        <CodeVariable name="handCard4" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard4"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="32">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="31_handCard4"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard3">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="33_handCard3">
+                        <CodeVariable name="handCard3" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard3"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="34">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="33_handCard3"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard2">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="35_handCard2">
+                        <CodeVariable name="handCard2" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard2"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="36">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="35_handCard2"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Container class="javax.swing.JPanel" name="handCard1">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2"/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <LayoutCode>
+                    <CodeStatement>
+                      <CodeExpression id="37_handCard1">
+                        <CodeVariable name="handCard1" type="8194" declaredType="javax.swing.JPanel"/>
+                        <ExpressionOrigin>
+                          <ExpressionProvider type="ComponentRef">
+                            <ComponentRef name="handCard1"/>
+                          </ExpressionProvider>
+                        </ExpressionOrigin>
+                      </CodeExpression>
+                      <StatementProvider type="CodeMethod">
+                        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                      </StatementProvider>
+                      <Parameters>
+                        <CodeExpression id="38">
+                          <ExpressionOrigin>
+                            <ExpressionProvider type="CodeConstructor">
+                              <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                            </ExpressionProvider>
+                            <Parameters>
+                              <CodeExpression id="37_handCard1"/>
+                            </Parameters>
+                          </ExpressionOrigin>
+                        </CodeExpression>
+                      </Parameters>
+                    </CodeStatement>
+                  </LayoutCode>
+                </Container>
+                <Component class="javax.swing.JLabel" name="jLabel1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="30" style="1"/>
+                    </Property>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="PLACE CARD HERE"/>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
